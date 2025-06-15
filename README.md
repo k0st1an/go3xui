@@ -9,6 +9,7 @@
 - [x] `GET /panel/api/inbounds/list`
 - [x] `POST /server/getNewX25519Cert`
 - [x] `POST /panel/api/inbounds/add`
+- [x] `POST /panel/api/inbounds/addClient`
 
 
 ## Usage

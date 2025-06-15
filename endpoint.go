@@ -21,3 +21,7 @@ func EndpointInboundsList(url string) string {
 func EndpointInboundsAdd(url string) string {
 	return fmt.Sprintf("%s/panel/api/inbounds/add", url)
 }
+
+func EndpointInboundAddClient(url string) string {
+	return fmt.Sprintf("%s/panel/api/inbounds/addClient", url)
+}
