@@ -1,3 +1,4 @@
+```go
 package main
 
 import (
@@ -8,12 +9,12 @@ import (
 )
 
 func main() {
-	apiClient, err := go3xui.NewClient("https://...")
+	apiClient, err := go3xui.NewClient("http://localhost:2053")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	if err := apiClient.Login("username", "password"); err != nil {
+	if err := apiClient.Login("admin", "admin"); err != nil {
 		log.Fatal(err)
 	}
 
@@ -45,7 +46,11 @@ func main() {
 	log.Println("Add client response:")
 	log.Printf("%+v", addClientResponse)
 }
+```
 
-// Output:
-// 2025/06/15 23:52:28 main.go:56: Add client response:
-// 2025/06/15 23:52:28 main.go:57: &{Success:true Msg:Client(s) added Successfully Obj:<nil>}
+Output:
+
+```
+2025/06/15 23:52:28 main.go:56: Add client response:
+2025/06/15 23:52:28 main.go:57: &{Success:true Msg:Client(s) added Successfully Obj:<nil>}
+```

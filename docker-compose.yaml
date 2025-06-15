@@ -1,0 +1,11 @@
+services:
+  x3xui:
+    image: ghcr.io/mhsanaei/3x-ui:2.5.6
+    ports:
+      - "2053:2053"
+    volumes:
+      - x3xui_storage:/etc/x-ui/
+
+volumes:
+  x3xui_storage:
+    driver: local
